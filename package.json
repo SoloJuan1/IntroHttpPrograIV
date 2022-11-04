@@ -9,6 +9,7 @@
   "author": "Juan Lagos",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "yargs": "^17.6.0"
   }
 }

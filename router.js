@@ -13,7 +13,13 @@ function empleado(req,res){
     res.write(JSON.stringify(objeto))
 }
 
+function about(req,res){
+    respuesta.writeHead(200,{'Content-Type':'text/plain'})
+    respuesta.write('Sitio desarrollado por Juan')
+}
+
 module.exports={
     index,
-    empleado
+    empleado,
+    about
 }
