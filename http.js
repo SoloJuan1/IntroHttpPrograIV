@@ -12,8 +12,7 @@ const server = http.createServer(function(peticion,respuesta){
             router.empleado(peticion,respuesta)
             break
         case '/about':
-            respuesta.writeHead(200,{'Content-Type':'text/plain'})
-            respuesta.write('Sitio desarrollado por Ivan')
+            router.about(peticion,respuesta)
             break
         default:
             respuesta.writeHead(404,{'Content-Type':'text/plain'})
