@@ -3,17 +3,17 @@ let objeto={
     "password":"12345"
 }
 
-function index(req,res){
+    const index= (req,res)=>{
     res.writeHead(200,{'Content-Type':'text/plain'})
     res.write('Pagina de inicio actualizada')
-}
+    }
 
-function empleado(req,res){
+const empleado= (req,res)=>{
     res.writeHead(200,{'Content-Type':'application/json'})
     res.write(JSON.stringify(objeto))
 }
 
-function about(req,res){
+const about= (req,res)=>{
     respuesta.writeHead(200,{'Content-Type':'text/plain'})
     respuesta.write('Sitio desarrollado por Juan')
 }

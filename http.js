@@ -2,7 +2,7 @@ const http = require('http')    //es de node
 const router = require('./router.js')
 require('dotenv').config()
 
-const server = http.createServer(function(peticion,respuesta){
+const server = http.createServer((peticion,respuesta) => {
     console.log(peticion.url)
     switch(peticion.url){
         case '/':
@@ -23,7 +23,7 @@ const server = http.createServer(function(peticion,respuesta){
     respuesta.end()
 })
 
-server.listen(process.env.PORT,process.env.HOST,function(){
+server.listen(process.env.PORT,process.env.HOST,()=>
     console.log(`Servidor disponible http://${process.env.HOST}:${process.env.PORT}`)
-})
+)
 //127.0.0.1 es lo mismo que localhost
